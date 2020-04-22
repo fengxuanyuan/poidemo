@@ -85,6 +85,7 @@ public class PoiServlet extends HttpServlet {
                                 if (filterBlankRow(i, row)) {
                                     continue;
                                 }
+
                                 int columns = row.getPhysicalNumberOfCells();
                                 for (int j = 0; j < columns; j++) {
                                     XSSFCell cell = row.getCell(j);
